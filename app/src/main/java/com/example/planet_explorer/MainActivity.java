@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView = (ListView) findViewById(R.id.listafrut);
+        listView = (ListView) findViewById(R.id.planetas);
 
         String[] nombres = {
                 "Sol",
@@ -47,17 +47,17 @@ public class MainActivity extends AppCompatActivity {
                 "Es un planeta 9"
         };
         Integer[] idimagenes = {
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana,
-                R.drawable.manzana
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico,
+                R.drawable.planetagenerico
         };
         AdapterListPlanet adaptador = new AdapterListPlanet(this, nombres, descripcion, idimagenes);
 
@@ -88,15 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 //startActivity(intent);
             }
         });
-
-        //listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-        //    @Override
-        //    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-        //        Toast.makeText(getApplicationContext(),"El costo es : "+precios[i],Toast.LENGTH_LONG).show();
-        //        return true;
-        //    }
-        //});
-
 
     }
 }

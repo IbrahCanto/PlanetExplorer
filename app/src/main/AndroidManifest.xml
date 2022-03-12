@@ -13,9 +13,6 @@
             android:name=".Detallles_Planetas"
             android:exported="false" />
         <activity
-            android:name=".Tierra"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
